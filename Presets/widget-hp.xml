@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+    <map name="main">
+        <value name="label">"Kirito"</value>
+        <value name="data">{"mode":1,"unit":"%","interval":1000,"source":"nvg://system/data#cpu","value":"load"}</value>
+        <value name="icon">{"normal":"nvg://hp-bar.widget.gpbeta.com/icon#SAO.png"}</value>
+    </map>
+    <list name="extra">
+        <map>
+            <value name="label">"Asuna"</value>
+            <value name="data">{"mode":1,"unit":"%","interval":1000,"source":"nvg://system/data#ram","value":"physical"}</value>
+        </map>
+    </list>
+    <value name="style">"nvg://sao.theme.gpbeta.com/hp-bar"</value>
+</map>

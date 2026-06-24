@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+    <list name="items">
+        <map>
+            <list name="elements">
+                <map>
+                    <value name="content">"pointer-meter"</value>
+                    <value name="alignment">1</value>
+                    <value name="left">1</value>
+                    <value name="vertical">0</value>
+                    <value name="horizon">-124</value>
+                    <value name="width">60</value>
+                    <value name="height">60</value>
+                    <map name="view">
+                        <value name="data">{"mode":0,"unit":"","interval":5000,"update":{"values":[],"actions":[],"init":"this.status = nvg.Value.Ready;\nthis.minimum = 0;\nthis.maximum = 12;\nthis.current = 0;","execute":"const now = new Date;\nthis.current = (now.getHours() % 12) + now.getMinutes() / 60;"},"source":"nvg://system/data#misc","value":"script-value"}</value>
+                        <value name="ptrImage">"nvg://sao.theme.gpbeta.com/image/misc#clock-h.png"</value>
+                        <value name="ptrOriginY">14</value>
+                        <value name="scale">false</value>
+                    </map>
+                    <value name="label">"Hour"</value>
+                </map>
+                <map>
+                    <value name="content">"pointer-meter"</value>
+                    <value name="alignment">1</value>
+                    <value name="left">1</value>
+                    <value name="width">60</value>
+                    <value name="height">60</value>
+                    <map name="view">
+                        <value name="data">{"mode":0,"unit":"","interval":5000,"update":{"values":[],"actions":[],"init":"this.status = nvg.Value.Ready;\nthis.minimum = 0;\nthis.maximum = 60;\nthis.current = 0;","execute":"this.current = (new Date).getMinutes();"},"source":"nvg://system/data#misc","value":"script-value"}</value>
+                        <value name="ptrImage">"nvg://sao.theme.gpbeta.com/image/misc#clock-m.png"</value>
+                        <value name="ptrOriginY">20</value>
+                        <value name="scale">false</value>
+                    </map>
+                    <value name="label">"Minute"</value>
+                </map>
+                <map>
+                    <value name="content">"text"</value>
+                    <value name="vertical">-1</value>
+                    <value name="horizon">31</value>
+                    <map name="view">
+                        <value name="mode">true</value>
+                        <value name="font">{"family":"SAO UI","pixelSize":62,"weight":50}</value>
+                        <value name="color">"#aaffffff"</value>
+                    </map>
+                    <value name="label">"Highlight"</value>
+                </map>
+                <map>
+                    <value name="content">"text"</value>
+                    <value name="vertical">1</value>
+                    <value name="horizon">32</value>
+                    <map name="view">
+                        <value name="mode">true</value>
+                        <value name="font">{"family":"SAO UI","pixelSize":62,"weight":50}</value>
+                        <value name="color">"#ee555555"</value>
+                    </map>
+                    <value name="label">"Text"</value>
+                </map>
+            </list>
+            <value name="background">{"normal":"nvg://sao.theme.gpbeta.com/image/misc#clock-bg.png"}</value>
+            <value name="data">{"mode":0,"unit":"","interval":5000,"update":"%H:%M","source":"nvg://system/data#system","value":"current-time"}</value>
+            <value name="width">304</value>
+            <value name="height">80</value>
+        </map>
+    </list>
+    <map name="craft"/>
+</map>

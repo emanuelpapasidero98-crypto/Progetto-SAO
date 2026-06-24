@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+    <value name="icon">{"normal":"nvg://sao.theme.gpbeta.com/icon/misc#mail.png","hovered":"nvg://sao.theme.gpbeta.com/icon/misc#mail-hovered.png","pressed":"nvg://sao.theme.gpbeta.com/icon/misc#mail-pressed.png"}</value>
+    <list name="items">
+        <map>
+            <value name="icon">{"normal":"nvg://sao.theme.gpbeta.com/icon/item#modify.png","hovered":"nvg://sao.theme.gpbeta.com/icon/item#modify-hovered.png"}</value>
+            <value name="label">"撰写邮件"</value>
+            <value name="action">{"data":{"command":0},"source":"nvg://mail-box.gpbeta.com/action"}</value>
+        </map>
+        <map>
+            <value name="label">"在线玩家"</value>
+            <value name="icon">{"normal":"nvg://sao.theme.gpbeta.com/icon/item#skills.png","hovered":"nvg://sao.theme.gpbeta.com/icon/item#skills-hovered.png"}</value>
+            <value name="action">{"data":{"command":2},"source":"nvg://mail-box.gpbeta.com/action"}</value>
+        </map>
+        <map>
+            <value name="label">"收件箱"</value>
+            <value name="icon">{"normal":"nvg://sao.theme.gpbeta.com/icon/item#items.png","hovered":"nvg://sao.theme.gpbeta.com/icon/item#items-hovered.png"}</value>
+            <value name="action">{"data":{"command":1},"source":"nvg://mail-box.gpbeta.com/action"}</value>
+        </map>
+        <map>
+            <value name="label">"设置"</value>
+            <value name="icon">{"normal":"nvg://sao.theme.gpbeta.com/icon/item#option.png","hovered":"nvg://sao.theme.gpbeta.com/icon/item#option-hovered.png"}</value>
+            <value name="action">{"data":{"command":3},"source":"nvg://mail-box.gpbeta.com/action"}</value>
+        </map>
+    </list>
+    <value name="style">"nvg://sao.theme.gpbeta.com/shortcut-menu"</value>
+</map>

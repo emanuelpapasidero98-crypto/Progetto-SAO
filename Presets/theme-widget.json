@@ -1,0 +1,93 @@
+{
+  "widgets": [
+    {
+      "source": "nvg://hp-bar.widget.gpbeta.com/widget",
+      "width": 358,
+      "height": 89,
+      "opacity": 1,
+      "location": 3,
+      "frame": 2,
+      "acceptFocus": true,
+      "acceptInput": true,
+      "desktop": {
+        "x": 100,
+        "y": 72,
+        "z": -100,
+        "anchor": 0
+      },
+      "launcher": {
+        "x": 200,
+        "y": 128,
+        "z": 100,
+        "anchor": 2
+     },
+      "settings": "widget-hp.xml"
+    },
+    {
+      "source": "nvg://menu.widget.gpbeta.com/widget",
+      "width": 56,
+      "height": 56,
+      "opacity": 1,
+      "location": 1,
+      "frame": 2,
+      "acceptFocus": true,
+      "acceptInput": true,
+      "desktop": {
+        "x": 128,
+        "y": 200,
+        "z": -100,
+        "anchor": 0
+      },
+      "settings": "widget-mail.xml"
+    },
+    {
+      "source": "nvg://bangumi.widget.gpbeta.com/widget",
+      "width": 192,
+      "height": 308,
+      "opacity": 1,
+      "location": 1,
+      "frame": 2,
+      "acceptFocus": true,
+      "acceptInput": true,
+      "desktop": {
+        "x": 100,
+        "y": 72,
+        "z": -100,
+        "anchor": 2
+      }
+    },
+    {
+      "source": "nvg://web.widget.gpbeta.com/widget",
+      "width": 640,
+      "height": 400,
+      "opacity": 1,
+      "location": 1,
+      "frame": 2,
+      "acceptFocus": true,
+      "acceptInput": true,
+      "desktop": {
+        "x": 0,
+        "y": 0,
+        "z": -100,
+        "anchor": 4
+      },
+      "settings": "widget-chat.xml"
+    },
+    {
+      "source": "nvg://media.gpbeta.com/widget/image",
+      "width": 96,
+      "height": 96,
+      "opacity": 1,
+      "location": 1,
+      "frame": 2,
+      "acceptFocus": true,
+      "acceptInput": true,
+      "desktop": {
+        "x": 108,
+        "y": 300,
+        "z": -100,
+        "anchor": 0
+      }
+    }
+  ]
+}

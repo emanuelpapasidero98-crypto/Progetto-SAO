@@ -1,0 +1,16 @@
+{
+  "NotifyAlert": { "source" : "nvg://sao.theme.gpbeta.com/sfx/notify-alert#SAO.Alert" },
+  "NotifyWarning": { "source" : "nvg://sao.theme.gpbeta.com/sfx/notify-warning#SAO.Warning" },
+  "NotifySystem": { "source" : "nvg://sao.theme.gpbeta.com/sfx/notify-system#SAO.System" },
+  "NotifyMessage": { "source" : "nvg://sao.theme.gpbeta.com/sfx/notify-message#ALO.Message" },
+  "FeedbackClick": { "source" : "nvg://sao.theme.gpbeta.com/sfx/feedback-click#ALO.Click" },
+  "PopupPanel": { "source" : "nvg://sao.theme.gpbeta.com/sfx/popup-panel#SAO.Panel" },
+  "PopupMenu": { "source" : "nvg://sao.theme.gpbeta.com/sfx/popup-menu#SAO.Menu" },
+  "PopupMessage": { "source" : "nvg://sao.theme.gpbeta.com/sfx/popup-message#ALO.Message" },
+  "PopupLauncher": { "source" : "nvg://sao.theme.gpbeta.com/sfx/popup-launcher#ALO.Launcher" },
+  "DismissMessage": { "source" : "nvg://sao.theme.gpbeta.com/sfx/dismiss-message#ALO.Message" },
+  "DismissLauncher": { "source" : "nvg://sao.theme.gpbeta.com/sfx/dismiss-launcher#ALO.Launcher" },
+  "ProgramReady": { "source" : "nvg://sao.theme.gpbeta.com/sfx/program-ready#ALO.Welcome" },
+  "ProgramStart": { "source" : "nvg://sao.theme.gpbeta.com/sfx/program-start#ALO.AmuSphere" },
+  "LinkStart": { "source" : "nvg://sao.theme.gpbeta.com/sfx/link-start#ALO.Leafa" }
+}

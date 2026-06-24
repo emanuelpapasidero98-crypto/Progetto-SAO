@@ -1,0 +1,6 @@
+{
+  "source": "nvg://web.widget.gpbeta.com/widget",
+  "settings": "widget-chat.xml",
+  "width": 640,
+  "height": 400
+}
