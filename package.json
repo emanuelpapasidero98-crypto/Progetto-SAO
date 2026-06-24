@@ -1,42 +1,115 @@
 {
-    "name": "com.gpbeta.widget.launch",
-    "version": "1.0.0",
+    "name": "system",
+
+    "version": "1.7.0",
     
     "title": {
-        "en": "Quick Launch Widget Extension",
-        "zh": "快速启动挂件扩展",
-        "zh_TW": "快速啟動掛件擴展",
-        "ja": "クイックランチウィジェット拡張機能"
+        "en": "System \"The Seed\"",
+        "zh": "核心系統「The Seed」",
+        "zh_TW": "核心系统「The Seed」",
+        "ja": "システム「ザ・シード」"
     },
 
     "description": {
-        "en": "Allows placing a customizable icon to execute an action on desktop.",
-        "zh": "一个可定制的图标，点击时执行自定义动作的简易挂件。",
-        "zh_TW": "一個可定製的圖標，點擊時執行自定義動作的簡易掛件。",
-        "ja": "カスタマイズ可能なアイコン、クリックするとカスタムアクションを実行するシンプルなウィジェット。"
+        "en": "\"The beginning of a world, called The Seed.
+Once it buds, you'll understand what it is.
+I'll leave what to do then up to you.
+You can delete and completely forget it.
+However, if you have any feelings left for that world besides hatred...\"",
+        "zh": "「这是世界的种子 The Seed」
+「等它发芽后你就知道是什么了」
+「之后该怎么做就交给你自己去判断」
+「删掉也好，忘掉也好，但是，如果你对那个世界还存有憎恶以外的感情的话……」",
+        "zh_TW": "「這是世界的種子 The Seed」
+「等它發芽後你就知道是什麽了」
+「之後該怎麽做就交給你自己去判斷」
+「刪掉也好，忘掉也好，但是，如果你對那個世界還存有憎惡以外的感情的話……」",
+        "ja": "「それは世界の種子、ザ・シードだ」
+「芽吹けばどういうものかわかる」
+「その後の判断は君に託そう」
+「消去し忘れるもよし、しかし、もし君があの世界に憎しみ以外の感情を残しているのなら……」"
     },
 
     "homepage": "http://sao.gpbeta.com",
     "bugs": { "email": "studiocghibli@gmail.com", "url": "https://nvg.dev/core/sao-utils/issues" },
-    "author": { "name": "Joshua GPBeta", "email": "studiocghibli@gmail.com", "url": "http://www.gpbeta.com" },
-
-    "engines": {
-        "qt.quick": ">=2.12",
-        "nvg.api": "~1"
-    },
+    "author": { "name": "Heathcliff", "url": "https://nvg.dev/Heathcliff" },
 
     "resources": [
         {
-            "location": "/widget",
-            "catalog": "widget",
+            "location": "/data",
+            "catalog": "data",
             "title": {
-                "en": "Quick Launch",
-                "zh": "快速启动挂件",
-                "zh_TW": "快速啟動掛件",
-                "ja": "クイックランチウィジェット"
+                "en": "Nerve Gear Data",
+                "zh": "NERvGear 数据",
+                "zh_TW": "NERvGear 數據",
+                "ja": "ナーヴギアのデータ"
             },
-            "preview": "Images/icon.png",
-            "entry": "qml/LaunchWidget.qml"
+            "entry": {
+                "system": "qml/data/SystemData.qml",
+                "cpu": "qml/data/CpuData.qml",
+                "gpu": "qml/data/GpuData.qml",
+                "ram": "qml/data/RamData.qml",
+                "hdd": "qml/data/HddData.qml",
+                "network": "qml/data/NetworkData.qml",
+                "power": "qml/data/PowerData.qml",
+                "user": "qml/data/UserData.qml",
+                "misc": "qml/data/MiscData.qml"
+            }
+        }, {
+            "location": "/action",
+            "catalog": "action",
+            "title": {
+                "en": "Nerve Gear Action",
+                "zh": "NERvGear 动作",
+                "zh_TW": "NERvGear 動作",
+                "ja": "ナーヴギアの操作"
+            },
+            "entry": {
+                "open": "qml/action/OpenAction.qml",
+                "cmd": "qml/action/CommandAction.qml",
+                "widget": "qml/action/WidgetAction.qml",
+                "theme": "qml/action/ThemeAction.qml",
+                "notify": "qml/action/NotifyAction.qml",
+                "sound": "qml/action/SoundAction.qml",
+                "keys": "qml/action/KeysAction.qml",
+                "system": "qml/action/SystemAction.qml",
+                "misc": "qml/action/MiscAction.qml",
+                "script": "qml/action/ScriptAction.qml"
+            }
+        }, {
+            "location": "/process",
+            "catalog": "processor/data",
+            "title": {
+                "en": "Nerve Gear Data Process",
+                "zh": "NERvGear 数据处理",
+                "zh_TW": "NERvGear 數據處理",
+                "ja": "ナーヴギアのデータ処理"
+            },
+            "entry": {
+                "unit": "qml/data/UnitProcessor.qml",
+                "stats": "qml/data/StatisticsProcessor.qml",
+                "marquee": "qml/data/MarqueeProcessor.qml",
+                "script": "qml/data/ScriptProcessor.qml"
+            }
+        }, {
+            "location": "/preset/widget-readme-en",
+            "catalog": "preset/widget",
+            "title": "READ ME",
+            "preview": "Presets/widget-readme-en.png",
+            "entry": "Presets/widget-readme-en.json"
+        }, {
+            "location": "/preset/widget-readme-zh",
+            "catalog": "preset/widget",
+            "title": "新手必读",
+            "preview": "Presets/widget-readme-zh.png",
+            "entry": "Presets/widget-readme-zh.json"
+        }, {
+            "location": "/assets/readme",
+            "catalog": "system.assets",
+            "title": "Read Me assets",
+            "entry": "Images/readme"
         }
-    ]
+    ],
+
+    "main": "module.qml"
 }

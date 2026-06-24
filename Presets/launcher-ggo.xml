@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+    <map name="settings">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/main#setting.png"}</value>
+        <value name="infoPanel">true</value>
+    </map>
+    <map name="settings.exit">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/item#logout.png"}</value>
+    </map>
+    <map name="root"/>
+    <map name="settings.option">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/item#option.png"}</value>
+    </map>
+    <map name="settings.help">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/item#help.png"}</value>
+    </map>
+    <map name="user">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/main#info.png"}</value>
+        <value name="infoPanel">true</value>
+    </map>
+    <map name="user.items">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/item#items.png"}</value>
+    </map>
+    <map name="user.documents">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/item#Other/favs2.png"}</value>
+    </map>
+    <map name="user.music">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/item#Media/iTunes.png"}</value>
+    </map>
+    <map name="user.pictures">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/item#Media/landskape.png"}</value>
+    </map>
+    <map name="user.videos">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/item#Media/YT2.png"}</value>
+    </map>
+    <map name="user.skills">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/item#skills.png"}</value>
+    </map>
+    <map name="user.explorer">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/item#System/windows.png"}</value>
+    </map>
+    <map name="user.notepad">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/item#Other/book.png"}</value>
+    </map>
+    <map name="user.calculator">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/item#Other/calculator.png"}</value>
+    </map>
+    <map name="user.cmd">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/item#System/sett-big.png"}</value>
+    </map>
+    <map name="user.equipment">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/item#equipments.png"}</value>
+    </map>
+    <map name="party">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/main#stats.png"}</value>
+    </map>
+    <map name="message">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/main#msg.png"}</value>
+    </map>
+    <map name="navigation">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/main#navi.png"}</value>
+    </map>
+    <map name="navigation.search">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/item#Network/search.png"}</value>
+    </map>
+    <map name="navigation.favorite">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/item#Other/Favs1.png"}</value>
+    </map>
+    <map name="navigation.bilibili">
+        <value name="icon">{"normal":"nvg://ggo.theme.gpbeta.com/icon/item#Media/WMP.png"}</value>
+    </map>
+</map>

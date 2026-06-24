@@ -1,0 +1,15 @@
+{
+  "menu": "launcher-menu.xml",
+  "themes": [
+    {
+      "source": "nvg://sao.theme.gpbeta.com/launcher",
+      "settings": "launcher-sao.xml"
+    }, {
+      "source": "nvg://ggo.theme.gpbeta.com/launcher",
+      "settings": "launcher-ggo.xml"
+    }, {
+      "source": "nvg://botw.zelda.theme.gpbeta.com/launcher",
+      "settings": "launcher-botw.xml"
+    }
+  ]
+}
