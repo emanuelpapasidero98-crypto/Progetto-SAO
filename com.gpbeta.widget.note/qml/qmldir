@@ -1,0 +1,3 @@
+singleton MemoSideDrawer 1.0 MemoSideDrawer.qml
+singleton MemoTopDrawer 1.0 MemoTopDrawer.qml
+singleton NoteToolBar 1.0 NoteToolBar.qml
