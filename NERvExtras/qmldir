@@ -1,0 +1,3 @@
+module NERvExtras
+plugin extrasplugin
+typeinfo plugins.qmltypes

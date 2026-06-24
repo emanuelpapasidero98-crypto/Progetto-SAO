@@ -1,0 +1,3 @@
+module NERvGear.Private
+plugin privateplugin
+depends NERvGear 1.0

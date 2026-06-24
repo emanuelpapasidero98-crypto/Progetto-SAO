@@ -1,0 +1,16 @@
+module NERvGear.Templates
+plugin templatesplugin
+
+Action 1.0 Action.qml
+Data 1.0 Data.qml
+Dialog 1.0 Dialog.qml
+Loading 1.0 Loading.qml
+Preview 1.0 Preview.qml
+Processor 1.0 Processor.qml
+Value 1.0 Value.qml
+Theme 1.0 Theme.qml
+
+Widget 1.0 Widget.qml
+Launcher 1.0 Launcher.qml
+LauncherView 1.0 LauncherView.qml
+LauncherItemOptions 1.0 LauncherItemOptions.qml

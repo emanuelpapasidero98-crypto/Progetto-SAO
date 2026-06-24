@@ -1,0 +1,5 @@
+import QtQuick.Templates 2.12 as T
+
+T.Dialog {
+    property string text
+}

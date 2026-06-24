@@ -1,0 +1,8 @@
+module com.gpbeta.common
+
+QuickMenuTemplate 1.0 QuickMenuTemplate.qml
+HPBarTemplate 1.0 HPBarTemplate.qml
+HPBarItemTemplate 1.0 HPBarItemTemplate.qml
+HUDElementTemplate 1.0 HUDElementTemplate.qml
+HUDFilterTemplate 1.0 HUDFilterTemplate.qml
+HUDInteractionTemplate 1.0 HUDInteractionTemplate.qml
