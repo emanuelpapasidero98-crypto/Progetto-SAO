@@ -1,0 +1,4 @@
+plugin implplugin
+typeinfo plugins.qmltypes
+
+singleton Shared 1.0 Shared.qml

@@ -1,0 +1,137 @@
+{
+    "name": "com.gpbeta.data.sensor",
+    "version": "1.2.0",
+    
+    "title": {
+        "en": "Sensor Data Extension",
+        "zh": "传感器数据扩展",
+        "zh_TW": "傳感器數據擴展",
+        "ja": "センサーデータ拡張機能"
+    },
+
+    "description": {
+        "en": "Provides data sources to query values from AIDA64, Core Temp, EVEREST, GPU-Z, HWiNFO, SpeedFan...etc.",
+        "zh": "提供 AIDA64, Core Temp, EVEREST, GPU-Z, HWiNFO, SpeedFan 等外部程序的数据源。",
+        "zh_TW": "提供 AIDA64, Core Temp, EVEREST, GPU-Z, HWiNFO, SpeedFan 等外部程序的數據源。",
+        "ja": "AIDA64, Core Temp, EVEREST, GPU-Z, HWiNFO, SpeedFan 等々外部プログラムをクエリするためのデータソースを提供します。"
+    },
+
+    "homepage": "http://sao.gpbeta.com",
+    "bugs": { "email": "studiocghibli@gmail.com", "url": "https://nvg.dev/core/sao-utils/issues" },
+    "author": { "name": "Joshua GPBeta", "email": "studiocghibli@gmail.com", "url": "http://www.gpbeta.com" },
+
+    "engines": {
+        "qt.quick": ">=2.12",
+        "nvg.api": "~1"
+    },
+
+    "resources": [
+        {
+            "location": "/data/gpu-z",
+            "catalog": "data",
+            "title": {
+                "en": "GPU-Z Data Proxy",
+                "zh": "GPU-Z 数据代理",
+                "zh_TW": "GPU-Z 數據代理",
+                "ja": "GPU-Z データ代理"
+            },
+            "entry": {
+                "info": "qml/GPUZInfoData.qml",
+                "sensor": "qml/GPUZSensorData.qml"
+            }
+        }, {
+            "location": "/data/speedfan",
+            "catalog": "data",
+            "title": {
+                "en": "SpeedFan Data Proxy",
+                "zh": "SpeedFan 数据代理",
+                "zh_TW": "SpeedFan 數據代理",
+                "ja": "SpeedFan データ代理"
+            },
+            "entry": {
+                "temp": "qml/SpeedFanTempData.qml",
+                "fan": "qml/SpeedFanFanData.qml",
+                "volt": "qml/SpeedFanVoltData.qml"
+            }
+        }, {
+            "location": "/data/hwinfo",
+            "catalog": "data",
+            "title": {
+                "en": "HWiNFO Data Proxy",
+                "zh": "HWiNFO 数据代理",
+                "zh_TW": "HWiNFO 數據代理",
+                "ja": "HWiNFO データ代理"
+            },
+            "entry": {
+                "temp": "qml/HWiNFOTempData.qml",
+                "volt": "qml/HWiNFOVoltData.qml",
+                "fan": "qml/HWiNFOFanData.qml",
+                "current": "qml/HWiNFOCurrentData.qml",
+                "power": "qml/HWiNFOPowerData.qml",
+                "clock": "qml/HWiNFOClockData.qml",
+                "usage": "qml/HWiNFOUsageData.qml",
+                "misc": "qml/HWiNFOMiscData.qml"
+            }
+        }, {
+            "location": "/data/core-temp",
+            "catalog": "data",
+            "title": {
+                "en": "Core Temp Data Proxy",
+                "zh": "Core Temp 数据代理",
+                "zh_TW": "Core Temp 數據代理",
+                "ja": "Core Temp データ代理"
+            },
+            "entry": {
+                "info": "qml/CoreTempInfoData.qml",
+                "load": "qml/CoreTempLoadData.qml",
+                "mtpr": "qml/CoreTempMtprData.qml",
+                "temp": "qml/CoreTempTempData.qml",
+                "power": "qml/CoreTempPowerData.qml"
+            }
+        }, {
+            "location": "/data/everest",
+            "catalog": "data",
+            "title": {
+                "en": "EVEREST Data Proxy",
+                "zh": "EVEREST 数据代理",
+                "zh_TW": "EVEREST 數據代理",
+                "ja": "EVEREST データ代理"
+            },
+            "entry": {
+                "system": "qml/EVERESTSystemData.qml",
+                "temp": "qml/EVERESTTempData.qml",
+                "fan": "qml/EVERESTFanData.qml",
+                "volt": "qml/EVERESTVoltData.qml",
+                "current": "qml/EVERESTCurrentData.qml",
+                "power": "qml/EVERESTPowerData.qml"
+            }
+        }, {
+            "location": "/data/aida64",
+            "catalog": "data",
+            "title": {
+                "en": "AIDA64 Data Proxy",
+                "zh": "AIDA64 数据代理",
+                "zh_TW": "AIDA64 數據代理",
+                "ja": "AIDA64 データ代理"
+            },
+            "entry": {
+                "system": "qml/AIDA64SystemData.qml",
+                "temp": "qml/AIDA64TempData.qml",
+                "fan": "qml/AIDA64FanData.qml",
+                "volt": "qml/AIDA64VoltData.qml",
+                "current": "qml/AIDA64CurrentData.qml",
+                "power": "qml/AIDA64PowerData.qml"
+            }
+        }, {
+            "location": "/data/batt-mon",
+            "catalog": "data",
+            "title": {
+                "en": "Bluetooth Battery Monitor Data Proxy",
+                "zh": "Bluetooth Battery Monitor 数据代理",
+                "zh_TW": "Bluetooth Battery Monitor 數據代理",
+                "ja": "Bluetooth Battery Monitor データ代理"
+            },
+            "entry": "qml/BluetoothBatteryMonitorData.qml"
+        }
+    ]
+}
