@@ -1,4 +1,4 @@
-module com.gpbeta.private
-
-DialogTemplate 1.0 DialogTemplate.qml
-LauncherTemplate 1.0 LauncherTemplate.qml
+module QtWebSockets
+plugin declarative_qmlwebsockets
+classname QtWebSocketsDeclarativeModule
+typeinfo plugins.qmltypes
