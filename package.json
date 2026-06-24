@@ -1,0 +1,298 @@
+{
+    "name": "com.gpbeta.theme.sao",
+
+    "version": "1.0.6",
+
+    "title": {
+        "en": "SAO Theme Extension",
+        "zh": "SAO 主题扩展",
+        "zh_TW": "SAO 主題擴展",
+        "ja": "SAO テーマ拡張機能"
+    },
+
+    "description": {
+        "en": "Sword Art Online style launcher menu, shortcut menu, message box, widget preset, icon and image resources.",
+        "zh": "「Sword Art Online」风格的启动器菜单、快捷菜单、消息框、预制挂件、图标和图片资源。",
+        "zh_TW": "「Sword Art Online」風格的啟動器菜單、便捷菜單、消息框、預製掛件、圖標和圖片資源。",
+        "ja": "「ソードアート・オンライン」風のランチャーメニュー、ショートカットメニュー、メッセージボックス、ウィジェットプリセット、アイコンと画像リソース。"
+    },
+
+    "homepage": "http://sao.gpbeta.com",
+    "bugs": { "email": "studiocghibli@gmail.com", "url": "https://nvg.dev/core/sao-utils/issues" },
+    "author": { "name": "Joshua GPBeta", "email": "studiocghibli@gmail.com", "url": "http://www.gpbeta.com" },
+
+    "engines": {
+        "qt.quick": ">=2.12",
+        "nvg.api": "~1"
+    },
+
+    "dependencies": {
+        "com.gpbeta.widget.hud": "*",
+        "com.gpbeta.widget.menu": "~1",
+        "com.gpbeta.widget.web": "*"
+    },
+
+    "resources": [
+        {
+            "title": {
+                "en": "SAO Main Menu Icons",
+                "zh": "SAO 主菜单图标",
+                "zh_TW": "SAO 主菜單圖標",
+                "ja": "SAO メインメニューアイコン"
+            },
+            "location": "/icon/main",
+            "catalog": "icon/light",
+            "entry": "Images/symbol"
+        }, {
+            "title": {
+                "en": "SAO Sub Menu Icons",
+                "zh": "SAO 子菜单图标",
+                "zh_TW": "SAO 子菜單圖標",
+                "ja": "SAO サブメニューアイコン"
+            },
+            "location": "/icon/item",
+            "catalog": "icon/light",
+            "entry": "Images/item"
+        }, {
+            "title": {
+                "en": "SAO Extra Icons",
+                "zh": "SAO 其他图标",
+                "zh_TW": "SAO 其他圖標",
+                "ja": "SAO 追加アイコン"
+            },
+            "location": "/icon/misc",
+            "catalog": "icon/color",
+            "entry": "Images/icon"
+        }, {
+            "title": {
+                "en": "SAO Extra Images",
+                "zh": "SAO 其他图片",
+                "zh_TW": "SAO 其他圖片",
+                "ja": "SAO 追加イメージ"
+            },
+            "location": "/image/misc",
+            "catalog": "image/widget",
+            "entry": {
+                "info.png": "Images/etc/info.png",
+                "clock-bg.png": "Images/etc/clock-bg.png",
+                "clock-h.png": "Images/etc/clock-h.png",
+                "clock-m.png": "Images/etc/clock-m.png"
+            }
+        }, {
+            "title": {
+                "en": "SAO Launcher Menu",
+                "zh": "SAO 启动器菜单",
+                "zh_TW": "SAO 啟動器菜單",
+                "ja": "SAO ランチャーメニュー"
+            },
+            "preview": "Images/cover.png",
+            "location": "/launcher",
+            "catalog": "launcher",
+            "entry": "qml/ThemeLauncher.qml"
+        }, {
+            "title": {
+                "en": "SAO Shortcut Menu",
+                "zh": "SAO 快捷菜单",
+                "zh_TW": "SAO 便捷菜單",
+                "ja": "SAO ショートカットメニュー"
+            },
+            "location": "/shortcut-menu",
+            "catalog": "com.gpbeta.quick-menu",
+            "entry": "qml/ShortcutMenu.qml"
+        }, {
+            "title": "SAO",
+            "location": "/hp-bar",
+            "catalog": "com.gpbeta.hp-bar",
+            "entry": "qml/HPBar.qml"
+        }, {
+            "title": {
+                "en": "SAO Message Box",
+                "zh": "SAO 消息框",
+                "zh_TW": "SAO 消息框",
+                "ja": "SAO メッセージボックス"
+            },
+            "location": "/dialog",
+            "catalog": "dialog",
+            "preview": "Images/etc/dialog-preview.png",
+            "entry": "qml/ThemeDialog.qml"
+        }, {
+            "location": "/preset/clock",
+            "catalog": "preset/widget",
+            "title": {
+                "en": "SAO Clock",
+                "zh": "SAO 时钟",
+                "zh_TW": "SAO 時鐘",
+                "ja": "SAO 時計"
+            },
+            "preview": "Presets/widget-clock.png",
+            "entry": "Presets/widget-clock.json"
+        }, {
+            "location": "/preset/hp",
+            "catalog": "preset/widget",
+            "title": {
+                "en": "SAO HP-Bar",
+                "zh": "SAO 血量槽",
+                "zh_TW": "SAO 血量條",
+                "ja": "SAO HP ゲージ"
+            },
+            "preview": "Presets/widget-hp.png",
+            "entry": "Presets/widget-hp.json"
+        }, {
+            "location": "/preset/mail",
+            "catalog": "preset/widget",
+            "title": {
+                "en": "SAO Mail Box",
+                "zh": "SAO 邮箱",
+                "zh_TW": "SAO 郵箱",
+                "ja": "SAO メール"
+            },
+            "preview": "Presets/widget-mail.png",
+            "entry": "Presets/widget-mail.json"
+        }, {
+            "location": "/preset/chat",
+            "catalog": "preset/widget",
+            "title": {
+                "en": "SAO Chat",
+                "zh": "SAO 聊天室",
+                "zh_TW": "SAO 聊天室",
+                "ja": "SAO チャット"
+            },
+            "preview": "Presets/widget-chat.png",
+            "entry": "Presets/widget-chat.json"
+        }, {
+            "location": "/theme/widget",
+            "catalog": "theme/widget",
+            "title": {
+                "en": "SAO Widget Theme",
+                "zh": "SAO 挂件主题",
+                "zh_TW": "SAO 掛件主題",
+                "ja": "SAO ウィジェットテーマ"
+            },
+            "preview": "Presets/theme-widget.png",
+            "entry": "Presets/theme-widget.json"
+        }, {
+            "location": "/preset/sfx-sao",
+            "catalog": "preset/sfx",
+            "title": {
+                "en": "SAO Sound Effects",
+                "zh": "SAO 音效方案",
+                "zh_TW": "SAO 音效方案",
+                "ja": "SAO 効果音"
+            },
+            "entry": "Presets/sfx-sao.json"
+        }, {
+            "location": "/preset/sfx-alo",
+            "catalog": "preset/sfx",
+            "title": {
+                "en": "ALO Sound Effects",
+                "zh": "ALO 音效方案",
+                "zh_TW": "ALO 音效方案",
+                "ja": "ALO 効果音"
+            },
+            "entry": "Presets/sfx-alo.json"
+        }, {
+            "location": "/sfx/link-start",
+            "catalog": "sfx/link-start",
+            "entry": {
+                "ALO.Asuna": "Sounds/LinkStart.ALO.Asuna.wav",
+                "ALO.Kirito": "Sounds/LinkStart.ALO.Kirito.wav",
+                "ALO.Leafa": "Sounds/LinkStart.ALO.Leafa.wav",
+                "GGO.Kirito": "Sounds/LinkStart.GGO.Kirito.wav",
+                "GGO.Kirito2": "Sounds/LinkStart.GGO.Kirito2.wav",
+                "GGO.Sinon": "Sounds/LinkStart.GGO.Sinon.wav",
+                "GGO.Sinon2": "Sounds/LinkStart.GGO.Sinon2.wav",
+                "SAO.Asuna": "Sounds/LinkStart.SAO.Asuna.wav",
+                "SAO.Kirito": "Sounds/LinkStart.SAO.Kirito.wav"
+            }
+        }, {
+            "location": "/sfx/program-start",
+            "catalog": "sfx/program/start",
+            "entry": {
+                "ALO.AmuSphere": "Sounds/Startup.ALO.AmuSphere.wav",
+                "ALO.NerveGear": "Sounds/Startup.ALO.NerveGear.wav",
+                "GGO.AmuSphere": "Sounds/Startup.GGO.AmuSphere.wav",
+                "SAO.NerveGear": "Sounds/Startup.SAO.NerveGear.wav"
+            }
+        }, {
+            "location": "/sfx/program-ready",
+            "catalog": "sfx/program/ready",
+            "entry": {
+                "ALO.Welcome": "Sounds/Ready.ALO.Welcome.wav",
+                "SAO.Welcome": "Sounds/Ready.SAO.Welcome.wav"
+            }
+        }, {
+            "location": "/sfx/feedback-click",
+            "catalog": "sfx/feedback/click",
+            "entry": {
+                "ALO.Click": "Sounds/Feedback.ALO.Click.wav",
+                "SAO.Click": "Sounds/Feedback.SAO.Click.wav"
+            }
+        }, {
+            "location": "/sfx/popup-launcher",
+            "catalog": "sfx/popup/launcher",
+            "entry": {
+                "ALO.Launcher": "Sounds/Popup.ALO.Launcher.wav",
+                "SAO.Launcher": "Sounds/Popup.SAO.Launcher.wav"
+            }
+        }, {
+            "location": "/sfx/popup-message",
+            "catalog": "sfx/popup/message",
+            "entry": {
+                "ALO.Message": "Sounds/Popup.ALO.Message.wav",
+                "SAO.Message": "Sounds/Popup.SAO.Message.wav"
+            }
+        }, {
+            "location": "/sfx/popup-menu",
+            "catalog": "sfx/popup/menu",
+            "entry": {
+                "SAO.Menu": "Sounds/Popup.SAO.Menu.wav"
+            }
+        }, {
+            "location": "/sfx/popup-panel",
+            "catalog": "sfx/popup/panel",
+            "entry": {
+                "SAO.Panel": "Sounds/Popup.SAO.Panel.wav"
+            }
+        }, {
+            "location": "/sfx/dismiss-launcher",
+            "catalog": "sfx/dismiss/launcher",
+            "entry": {
+                "ALO.Launcher": "Sounds/Dismiss.ALO.Launcher.wav",
+                "SAO.Launcher": "Sounds/Dismiss.SAO.Launcher.wav"
+            }
+        }, {
+            "location": "/sfx/dismiss-message",
+            "catalog": "sfx/dismiss/message",
+            "entry": {
+                "ALO.Message": "Sounds/Dismiss.ALO.Message.wav",
+                "SAO.Message": "Sounds/Dismiss.SAO.Message.wav"
+            }
+        }, {
+            "location": "/sfx/notify-message",
+            "catalog": "sfx/notify/message",
+            "entry": {
+                "ALO.Message": "Sounds/Notify.ALO.Message.wav",
+                "SAO.Message": "Sounds/Notify.SAO.Message.wav",
+                "SAO.Present": "Sounds/Notify.SAO.Present.wav"
+            }
+        }, {
+            "location": "/sfx/notify-system",
+            "catalog": "sfx/notify/system",
+            "entry": {
+                "SAO.System": "Sounds/Notify.SAO.System.wav"
+            }
+        }, {
+            "location": "/sfx/notify-warning",
+            "catalog": "sfx/notify/warning",
+            "entry": {
+                "SAO.Warning": "Sounds/Notify.SAO.Warning.wav"
+            }
+        }, {
+            "location": "/sfx/notify-alert",
+            "catalog": "sfx/notify/alert",
+            "entry": {
+                "SAO.Alert": "Sounds/Notify.SAO.Alert.wav"
+            }
+        }
+    ]
+}
