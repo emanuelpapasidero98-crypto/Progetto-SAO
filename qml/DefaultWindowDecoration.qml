@@ -3,7 +3,7 @@
 ** Copyright (C) 2016 The Qt Company Ltd.
 ** Contact: https://www.qt.io/licensing/
 **
-** This file is part of the Qt Quick Extras module of the Qt Toolkit.
+** This file is part of the Qt Quick Dialogs module of the Qt Toolkit.
 **
 ** $QT_BEGIN_LICENSE:LGPL$
 ** Commercial License Usage
@@ -37,60 +37,33 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.1
-import HelperWidgets 2.0
-import QtQuick.Layouts 1.0
+import QtQuick 2.2
 
-Column {
-    anchors.left: parent.left
-    anchors.right: parent.right
+Rectangle {
+    color: "#80000000"
+    anchors.fill: parent
+    z: 1000000
+    property alias content: borderImage.content
+    property bool dismissOnOuterClick: true
+    signal dismissed
+    MouseArea {
+        anchors.fill: parent
+        onClicked: if (dismissOnOuterClick) dismissed()
+        BorderImage {
+            id: borderImage
+            property Item content
 
-    Section {
-        anchors.left: parent.left
-        anchors.right: parent.right
-        caption: qsTr("DelayButton")
+            MouseArea { anchors.fill: parent }
 
-        SectionLayout {
-            Label {
-                text: qsTr("Text")
-                tooltip: qsTr("Text")
-            }
-            SecondColumnLayout {
-                LineEdit {
-                    backendValue: backendValues.text
-                    showTranslateCheckBox: true
-                    implicitWidth: 180
-                }
-                ExpandingSpacer {
-                }
-            }
-
-//            Label {
-//                text: qsTr("Disable Button")
-//                tooltip: qsTr("Disable Button")
-//            }
-//            SecondColumnLayout {
-//                CheckBox {
-//                    backendValue: backendValues.disabled
-//                    implicitWidth: 180
-//                }
-//                ExpandingSpacer {
-//                }
-//            }
-
-            Label {
-                text: qsTr("Delay")
-                tooltip: qsTr("Delay")
-            }
-            SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.delay
-                    minimumValue: 0
-                    maximumValue: 60000
-                }
-                ExpandingSpacer {
-                }
-            }
+            width: content ? content.width + 15 : 0
+            height: content ? content.height + 15 : 0
+            onWidthChanged: if (content) content.x = 5
+            onHeightChanged: if (content) content.y = 5
+            border { left: 10; top: 10; right: 10; bottom: 10 }
+            clip: true
+            source: "../images/window_border.png"
+            anchors.centerIn: parent
+            onContentChanged: if (content) content.parent = borderImage
         }
     }
 }

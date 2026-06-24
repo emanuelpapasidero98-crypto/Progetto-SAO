@@ -48,84 +48,32 @@ Column {
     Section {
         anchors.left: parent.left
         anchors.right: parent.right
-        caption: qsTr("Dial")
+        caption: qsTr("StatusIndicator")
 
         SectionLayout {
             Label {
-                text: qsTr("Value")
-                tooltip: qsTr("Value")
-            }
-            SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.value
-                    minimumValue: backendValues.minimumValue.value
-                    maximumValue: backendValues.maximumValue.value
-                    stepSize: 0.01
-                    decimals: 2
-                }
-                ExpandingSpacer {
-                }
-            }
-
-            Label {
-                text: qsTr("Minimum Value")
-                tooltip: qsTr("Minimum Value")
-            }
-            SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.minimumValue
-                    minimumValue: -1000
-                    maximumValue: backendValues.maximumValue.value
-                    stepSize: 0.01
-                    decimals: 2
-                }
-                ExpandingSpacer {
-                }
-            }
-
-            Label {
-                text: qsTr("Maximum Value")
-                tooltip: qsTr("Maximum Value")
-            }
-            SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.maximumValue
-                    minimumValue: backendValues.minimumValue.value
-                    maximumValue: 1000
-                    stepSize: 0.01
-                    decimals: 2
-                }
-                ExpandingSpacer {
-                }
-            }
-
-            Label {
-                text: qsTr("Step Size")
-                tooltip: qsTr("Step Size")
-            }
-            SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.stepSize
-                    minimumValue: 0
-                    maximumValue: backendValues.maximumValue.value
-                    stepSize: 0.01
-                    decimals: 2
-                }
-                ExpandingSpacer {
-                }
-            }
-
-            Label {
-                text: qsTr("Tickmarks Visible")
-                tooltip: qsTr("Tickmarks Visible")
+                text: qsTr("Active")
+                tooltip: qsTr("Active")
             }
             SecondColumnLayout {
                 CheckBox {
-                    backendValue: backendValues.tickmarksVisible
+                    backendValue: backendValues.active
+                    implicitWidth: 100
                 }
                 ExpandingSpacer {
                 }
             }
+        }
+    }
+    Section {
+        anchors.left: parent.left
+        anchors.right: parent.right
+        caption: qsTr("Color")
+
+        ColorEditor {
+            caption: qsTr("Color")
+            backendValue: backendValues.color
+            supportGradient: false
         }
     }
 }

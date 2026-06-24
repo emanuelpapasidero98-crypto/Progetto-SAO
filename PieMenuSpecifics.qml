@@ -40,6 +40,8 @@
 import QtQuick 2.1
 import HelperWidgets 2.0
 import QtQuick.Layouts 1.0
+import QtQuick.Controls 1.1 as Controls
+import QtQuick.Controls.Styles 1.1
 
 Column {
     anchors.left: parent.left
@@ -48,80 +50,49 @@ Column {
     Section {
         anchors.left: parent.left
         anchors.right: parent.right
-        caption: qsTr("Dial")
+        caption: qsTr("PieMenu")
 
         SectionLayout {
             Label {
-                text: qsTr("Value")
-                tooltip: qsTr("Value")
+                text: qsTr("Trigger Mode")
+                tooltip: qsTr("Trigger Mode")
             }
             SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.value
-                    minimumValue: backendValues.minimumValue.value
-                    maximumValue: backendValues.maximumValue.value
-                    stepSize: 0.01
-                    decimals: 2
-                }
-                ExpandingSpacer {
-                }
-            }
+                // Work around ComboBox string => int problem.
+                Controls.ComboBox {
+                    id: comboBox
 
-            Label {
-                text: qsTr("Minimum Value")
-                tooltip: qsTr("Minimum Value")
-            }
-            SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.minimumValue
-                    minimumValue: -1000
-                    maximumValue: backendValues.maximumValue.value
-                    stepSize: 0.01
-                    decimals: 2
-                }
-                ExpandingSpacer {
-                }
-            }
+                    property variant backendValue: backendValues.triggerMode
 
-            Label {
-                text: qsTr("Maximum Value")
-                tooltip: qsTr("Maximum Value")
-            }
-            SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.maximumValue
-                    minimumValue: backendValues.minimumValue.value
-                    maximumValue: 1000
-                    stepSize: 0.01
-                    decimals: 2
-                }
-                ExpandingSpacer {
-                }
-            }
+                    property color textColor: "white"
+                    implicitWidth: 180
+                    model:  ["TriggerOnPress", "TriggerOnRelease", "TriggerOnClick"]
 
-            Label {
-                text: qsTr("Step Size")
-                tooltip: qsTr("Step Size")
-            }
-            SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.stepSize
-                    minimumValue: 0
-                    maximumValue: backendValues.maximumValue.value
-                    stepSize: 0.01
-                    decimals: 2
-                }
-                ExpandingSpacer {
-                }
-            }
+                    QtObject {
+                        property variant valueFromBackend: comboBox.backendValue
+                        onValueFromBackendChanged: {
+                            comboBox.currentIndex = comboBox.find(comboBox.backendValue.valueToString);
+                        }
+                    }
 
-            Label {
-                text: qsTr("Tickmarks Visible")
-                tooltip: qsTr("Tickmarks Visible")
-            }
-            SecondColumnLayout {
-                CheckBox {
-                    backendValue: backendValues.tickmarksVisible
+                    onCurrentTextChanged: {
+                        if (backendValue === undefined)
+                            return;
+
+                        if (backendValue.value !== currentText)
+                            backendValue.value = comboBox.currentIndex
+                    }
+
+                    style: CustomComboBoxStyle {
+                        textColor: comboBox.textColor
+                    }
+
+                    ExtendedFunctionButton {
+                        x: 2
+                        y: 4
+                        backendValue: comboBox.backendValue
+                        visible: comboBox.enabled
+                    }
                 }
                 ExpandingSpacer {
                 }
@@ -129,3 +100,4 @@ Column {
         }
     }
 }
+

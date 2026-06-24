@@ -37,60 +37,35 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.1
-import HelperWidgets 2.0
-import QtQuick.Layouts 1.0
+import QtQuick 2.2
+import QtQuick.Controls 1.4
+import QtQuick.Controls.Styles 1.4
+import QtQuick.Controls.Private 1.0
 
-Column {
-    anchors.left: parent.left
-    anchors.right: parent.right
+/*!
+    \qmltype ToggleButton
+    \inqmlmodule QtQuick.Extras
+    \since 5.5
+    \ingroup extras
+    \ingroup extras-interactive
+    \brief A push button that toggles between two states.
 
-    Section {
-        anchors.left: parent.left
-        anchors.right: parent.right
-        caption: qsTr("DelayButton")
+    \image togglebutton-unchecked.png An unchecked ToggleButton
+    An unchecked ToggleButton.
+    \image togglebutton-checked.png A checked ToggleButton
+    A checked ToggleButton.
 
-        SectionLayout {
-            Label {
-                text: qsTr("Text")
-                tooltip: qsTr("Text")
-            }
-            SecondColumnLayout {
-                LineEdit {
-                    backendValue: backendValues.text
-                    showTranslateCheckBox: true
-                    implicitWidth: 180
-                }
-                ExpandingSpacer {
-                }
-            }
+    The ToggleButton is a simple extension of Qt Quick Controls' Button, using
+    the checked property to toggle between two states: \e checked and
+    \e unchecked. It enhances the visibility of a checkable button's state by
+    placing color-coded indicators around the button.
 
-//            Label {
-//                text: qsTr("Disable Button")
-//                tooltip: qsTr("Disable Button")
-//            }
-//            SecondColumnLayout {
-//                CheckBox {
-//                    backendValue: backendValues.disabled
-//                    implicitWidth: 180
-//                }
-//                ExpandingSpacer {
-//                }
-//            }
+    You can create a custom appearance for a ToggleButton by assigning a
+    \l {ToggleButtonStyle}.
+*/
 
-            Label {
-                text: qsTr("Delay")
-                tooltip: qsTr("Delay")
-            }
-            SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.delay
-                    minimumValue: 0
-                    maximumValue: 60000
-                }
-                ExpandingSpacer {
-                }
-            }
-        }
-    }
+Button {
+    id: button
+    checkable: true
+    style: Settings.styleComponent(Settings.style, "ToggleButtonStyle.qml", button)
 }

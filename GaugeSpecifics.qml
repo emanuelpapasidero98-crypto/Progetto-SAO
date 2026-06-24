@@ -48,9 +48,10 @@ Column {
     Section {
         anchors.left: parent.left
         anchors.right: parent.right
-        caption: qsTr("Dial")
+        caption: qsTr("Gauge")
 
         SectionLayout {
+
             Label {
                 text: qsTr("Value")
                 tooltip: qsTr("Value")
@@ -74,7 +75,7 @@ Column {
             SecondColumnLayout {
                 SpinBox {
                     backendValue: backendValues.minimumValue
-                    minimumValue: -1000
+                    minimumValue: 0
                     maximumValue: backendValues.maximumValue.value
                     stepSize: 0.01
                     decimals: 2
@@ -99,33 +100,35 @@ Column {
                 }
             }
 
-            Label {
-                text: qsTr("Step Size")
-                tooltip: qsTr("Step Size")
-            }
-            SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.stepSize
-                    minimumValue: 0
-                    maximumValue: backendValues.maximumValue.value
-                    stepSize: 0.01
-                    decimals: 2
-                }
-                ExpandingSpacer {
-                }
-            }
+//            Label {
+//                text: qsTr("Orientation")
+//                tooltip: qsTr("Orientation")
+//            }
+//            SecondColumnLayout {
+//                ComboBox {
+//                    id: orientationComboBox
+//                    backendValue: backendValues.orientation
+//                    implicitWidth: 180
+//                    model:  ["Vertical", "Horizontal"]
+//                }
+//                ExpandingSpacer {
+//                }
+//            }
 
-            Label {
-                text: qsTr("Tickmarks Visible")
-                tooltip: qsTr("Tickmarks Visible")
-            }
-            SecondColumnLayout {
-                CheckBox {
-                    backendValue: backendValues.tickmarksVisible
-                }
-                ExpandingSpacer {
-                }
-            }
+//            Label {
+//                text: qsTr("Tickmark Alignment")
+//                tooltip: qsTr("Tickmark Alignment")
+//            }
+
+//            SecondColumnLayout {
+//                ComboBox {
+//                    backendValue: backendValues.orientation
+//                    implicitWidth: 180
+//                    model: orientationComboBox.currentText === "Vertical" ? ["AlignLeft", "AlignRight"] : ["AlignTop", "AlignBottom"]
+//                }
+//                ExpandingSpacer {
+//                }
+//            }
         }
     }
 }

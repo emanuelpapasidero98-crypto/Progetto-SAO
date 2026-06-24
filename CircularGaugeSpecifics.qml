@@ -48,7 +48,7 @@ Column {
     Section {
         anchors.left: parent.left
         anchors.right: parent.right
-        caption: qsTr("Dial")
+        caption: qsTr("CircularGauge")
 
         SectionLayout {
             Label {
@@ -60,8 +60,6 @@ Column {
                     backendValue: backendValues.value
                     minimumValue: backendValues.minimumValue.value
                     maximumValue: backendValues.maximumValue.value
-                    stepSize: 0.01
-                    decimals: 2
                 }
                 ExpandingSpacer {
                 }
@@ -73,11 +71,10 @@ Column {
             }
             SecondColumnLayout {
                 SpinBox {
+                    id: minimumValueSpinBox
                     backendValue: backendValues.minimumValue
-                    minimumValue: -1000
+                    minimumValue: 0
                     maximumValue: backendValues.maximumValue.value
-                    stepSize: 0.01
-                    decimals: 2
                 }
                 ExpandingSpacer {
                 }
@@ -89,11 +86,10 @@ Column {
             }
             SecondColumnLayout {
                 SpinBox {
+                    id: maximumValueSpinBox
                     backendValue: backendValues.maximumValue
                     minimumValue: backendValues.minimumValue.value
                     maximumValue: 1000
-                    stepSize: 0.01
-                    decimals: 2
                 }
                 ExpandingSpacer {
                 }
@@ -108,20 +104,6 @@ Column {
                     backendValue: backendValues.stepSize
                     minimumValue: 0
                     maximumValue: backendValues.maximumValue.value
-                    stepSize: 0.01
-                    decimals: 2
-                }
-                ExpandingSpacer {
-                }
-            }
-
-            Label {
-                text: qsTr("Tickmarks Visible")
-                tooltip: qsTr("Tickmarks Visible")
-            }
-            SecondColumnLayout {
-                CheckBox {
-                    backendValue: backendValues.tickmarksVisible
                 }
                 ExpandingSpacer {
                 }
@@ -129,3 +111,4 @@ Column {
         }
     }
 }
+

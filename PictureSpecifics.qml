@@ -40,6 +40,8 @@
 import QtQuick 2.1
 import HelperWidgets 2.0
 import QtQuick.Layouts 1.0
+import QtQuick.Controls 1.1 as Controls
+import QtQuick.Controls.Styles 1.1
 
 Column {
     anchors.left: parent.left
@@ -48,84 +50,34 @@ Column {
     Section {
         anchors.left: parent.left
         anchors.right: parent.right
-        caption: qsTr("Dial")
+        caption: qsTr("Picture")
 
         SectionLayout {
             Label {
-                text: qsTr("Value")
-                tooltip: qsTr("Value")
+                text: qsTr("Source")
+                tooltip: qsTr("Source")
             }
             SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.value
-                    minimumValue: backendValues.minimumValue.value
-                    maximumValue: backendValues.maximumValue.value
-                    stepSize: 0.01
-                    decimals: 2
-                }
-                ExpandingSpacer {
-                }
-            }
-
-            Label {
-                text: qsTr("Minimum Value")
-                tooltip: qsTr("Minimum Value")
-            }
-            SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.minimumValue
-                    minimumValue: -1000
-                    maximumValue: backendValues.maximumValue.value
-                    stepSize: 0.01
-                    decimals: 2
-                }
-                ExpandingSpacer {
-                }
-            }
-
-            Label {
-                text: qsTr("Maximum Value")
-                tooltip: qsTr("Maximum Value")
-            }
-            SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.maximumValue
-                    minimumValue: backendValues.minimumValue.value
-                    maximumValue: 1000
-                    stepSize: 0.01
-                    decimals: 2
-                }
-                ExpandingSpacer {
-                }
-            }
-
-            Label {
-                text: qsTr("Step Size")
-                tooltip: qsTr("Step Size")
-            }
-            SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.stepSize
-                    minimumValue: 0
-                    maximumValue: backendValues.maximumValue.value
-                    stepSize: 0.01
-                    decimals: 2
-                }
-                ExpandingSpacer {
-                }
-            }
-
-            Label {
-                text: qsTr("Tickmarks Visible")
-                tooltip: qsTr("Tickmarks Visible")
-            }
-            SecondColumnLayout {
-                CheckBox {
-                    backendValue: backendValues.tickmarksVisible
+                LineEdit {
+                    backendValue: backendValues.source
+                    showTranslateCheckBox: false
+                    implicitWidth: 180
                 }
                 ExpandingSpacer {
                 }
             }
         }
     }
+    Section {
+        anchors.left: parent.left
+        anchors.right: parent.right
+        caption: qsTr("Color")
+
+        ColorEditor {
+            caption: qsTr("Color")
+            backendValue: backendValues.color
+            supportGradient: false
+        }
+    }
 }
+

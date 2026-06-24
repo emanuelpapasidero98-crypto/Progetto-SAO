@@ -48,80 +48,44 @@ Column {
     Section {
         anchors.left: parent.left
         anchors.right: parent.right
-        caption: qsTr("Dial")
+        caption: qsTr("ToggleButton")
 
         SectionLayout {
             Label {
-                text: qsTr("Value")
-                tooltip: qsTr("Value")
+                text: qsTr("Text")
+                tooltip: qsTr("Text")
             }
             SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.value
-                    minimumValue: backendValues.minimumValue.value
-                    maximumValue: backendValues.maximumValue.value
-                    stepSize: 0.01
-                    decimals: 2
+                LineEdit {
+                    backendValue: backendValues.text
+                    showTranslateCheckBox: true
+                    implicitWidth: 180
                 }
                 ExpandingSpacer {
                 }
             }
 
-            Label {
-                text: qsTr("Minimum Value")
-                tooltip: qsTr("Minimum Value")
-            }
-            SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.minimumValue
-                    minimumValue: -1000
-                    maximumValue: backendValues.maximumValue.value
-                    stepSize: 0.01
-                    decimals: 2
-                }
-                ExpandingSpacer {
-                }
-            }
+//            Label {
+//                text: qsTr("Disable Button")
+//                tooltip: qsTr("Disable Button")
+//            }
+//            SecondColumnLayout {
+//                CheckBox {
+//                    backendValue: backendValues.disabled
+//                    implicitWidth: 180
+//                }
+//                ExpandingSpacer {
+//                }
+//            }
 
             Label {
-                text: qsTr("Maximum Value")
-                tooltip: qsTr("Maximum Value")
-            }
-            SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.maximumValue
-                    minimumValue: backendValues.minimumValue.value
-                    maximumValue: 1000
-                    stepSize: 0.01
-                    decimals: 2
-                }
-                ExpandingSpacer {
-                }
-            }
-
-            Label {
-                text: qsTr("Step Size")
-                tooltip: qsTr("Step Size")
-            }
-            SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.stepSize
-                    minimumValue: 0
-                    maximumValue: backendValues.maximumValue.value
-                    stepSize: 0.01
-                    decimals: 2
-                }
-                ExpandingSpacer {
-                }
-            }
-
-            Label {
-                text: qsTr("Tickmarks Visible")
-                tooltip: qsTr("Tickmarks Visible")
+                text: qsTr("Checked")
+                tooltip: qsTr("Checked")
             }
             SecondColumnLayout {
                 CheckBox {
-                    backendValue: backendValues.tickmarksVisible
+                    backendValue: backendValues.checked
+                    implicitWidth: 180
                 }
                 ExpandingSpacer {
                 }

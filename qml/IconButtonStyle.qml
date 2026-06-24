@@ -3,7 +3,7 @@
 ** Copyright (C) 2016 The Qt Company Ltd.
 ** Contact: https://www.qt.io/licensing/
 **
-** This file is part of the Qt Quick Extras module of the Qt Toolkit.
+** This file is part of the Qt Quick Dialogs module of the Qt Toolkit.
 **
 ** $QT_BEGIN_LICENSE:LGPL$
 ** Commercial License Usage
@@ -37,60 +37,22 @@
 **
 ****************************************************************************/
 
-import QtQuick 2.1
-import HelperWidgets 2.0
-import QtQuick.Layouts 1.0
+import QtQuick 2.2
+import QtQuick.Controls 1.2
+import QtQuick.Controls.Private 1.0
+import QtQuick.Controls.Styles 1.1
 
-Column {
-    anchors.left: parent.left
-    anchors.right: parent.right
+ButtonStyle {
+    FontLoader { id: iconFont; source: "icons.ttf" }
 
-    Section {
-        anchors.left: parent.left
-        anchors.right: parent.right
-        caption: qsTr("DelayButton")
-
-        SectionLayout {
-            Label {
-                text: qsTr("Text")
-                tooltip: qsTr("Text")
-            }
-            SecondColumnLayout {
-                LineEdit {
-                    backendValue: backendValues.text
-                    showTranslateCheckBox: true
-                    implicitWidth: 180
-                }
-                ExpandingSpacer {
-                }
-            }
-
-//            Label {
-//                text: qsTr("Disable Button")
-//                tooltip: qsTr("Disable Button")
-//            }
-//            SecondColumnLayout {
-//                CheckBox {
-//                    backendValue: backendValues.disabled
-//                    implicitWidth: 180
-//                }
-//                ExpandingSpacer {
-//                }
-//            }
-
-            Label {
-                text: qsTr("Delay")
-                tooltip: qsTr("Delay")
-            }
-            SecondColumnLayout {
-                SpinBox {
-                    backendValue: backendValues.delay
-                    minimumValue: 0
-                    maximumValue: 60000
-                }
-                ExpandingSpacer {
-                }
-            }
-        }
+    label: Text {
+        id: text
+        font.family: iconFont.name
+        font.pointSize: TextSingleton.font.pointSize * 1.5
+        renderType: Settings.isMobile ? Text.QtRendering : Text.NativeRendering
+        text: control.text
+        color: SystemPaletteSingleton.buttonText(control.enabled)
+        verticalAlignment: Text.AlignVCenter
+        horizontalAlignment: Text.AlignHCenter
     }
 }
