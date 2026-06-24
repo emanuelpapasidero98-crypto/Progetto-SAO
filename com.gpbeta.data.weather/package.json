@@ -1,0 +1,47 @@
+{
+    "name": "com.gpbeta.data.weather",
+    "version": "1.1.0",
+    
+    "title": {
+        "en": "Weather Data Extension",
+        "zh": "天气数据扩展",
+        "zh_TW": "天氣數據擴展",
+        "ja": "気象データ拡張機能"
+    },
+
+    "description": {
+        "en": "Provides a data source for obtaining weather information such as temperature, UV, wind direction, and barometric pressure forecasts.",
+        "zh": "提供用于获取温度、紫外线、风向和气压预报等天气信息的数据源。",
+        "zh_TW": "提供用於獲取溫度、紫外線、風向和氣壓預報等天氣信息的數據源。",
+        "ja": "気温、UV、風向、気圧予報などの天気情報を取得するためのデータソースを提供します。"
+    },
+
+    "homepage": "http://sao.gpbeta.com",
+    "bugs": { "email": "studiocghibli@gmail.com", "url": "https://nvg.dev/core/sao-utils/issues" },
+    "author": { "name": "Joshua GPBeta", "email": "studiocghibli@gmail.com", "url": "http://www.gpbeta.com" },
+
+    "engines": {
+        "qt.quick": ">=2.12",
+        "nvg.api": "~1"
+    },
+
+    "resources": [
+        {
+            "location": "/data",
+            "catalog": "data",
+            "title": {
+                "en": "Weather Data Collection",
+                "zh": "天气数据合集",
+                "zh_TW": "天氣數據合集",
+                "ja": "気象データコレクション"
+            },
+            "entry": {
+                "general": "qml/GeneralData.qml",
+                "uv": "qml/UvData.qml",
+                "wind": "qml/WindData.qml",
+                "pressure": "qml/PressureData.qml",
+                "raw": "qml/RawData.qml"
+            }
+        }
+    ]
+}
