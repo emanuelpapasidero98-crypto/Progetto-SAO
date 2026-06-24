@@ -1,0 +1,44 @@
+{
+    "name": "com.gpbeta.data.pdh",
+    "version": "1.0.1",
+    
+    "title": {
+        "en": "PDH Data Extension",
+        "zh": "PDH 数据扩展",
+        "zh_TW": "PDH 數據擴展",
+        "ja": "PDH データ拡張機能"
+    },
+
+    "description": {
+        "en": "Provides a data source to query values from PDH (Windows Performance Counters).",
+        "zh": "提供用于查询 PDH「Windows 性能计数器」的数据源。",
+        "zh_TW": "提供用於查詢 PDH「Windows 性能計數器」的數據源。",
+        "ja": "PDH「Windows パフォーマンスカウンタ」をクエリするためのデータソースを提供します。"
+    },
+
+    "homepage": "http://sao.gpbeta.com",
+    "bugs": { "email": "studiocghibli@gmail.com", "url": "https://nvg.dev/core/sao-utils/issues" },
+    "author": { "name": "Joshua GPBeta", "email": "studiocghibli@gmail.com", "url": "http://www.gpbeta.com" },
+    "contributors": [
+        { "name": "RangerCD", "email": "compact-disk@live.com", "url": "http://www.rangercd.com" }
+    ],
+
+    "engines": {
+        "qt.quick": ">=2.12",
+        "nvg.api": "~1"
+    },
+
+    "resources": [
+        {
+            "location": "/data",
+            "catalog": "data",
+            "title": {
+                "en": "PDH Data Collection",
+                "zh": "PDH 数据合集",
+                "zh_TW": "PDH 數據合集",
+                "ja": "PDH データコレクション"
+            },
+            "entry": "qml/PdhData.qml"
+        }
+    ]
+}
