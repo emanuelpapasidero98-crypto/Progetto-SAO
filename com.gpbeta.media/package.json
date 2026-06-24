@@ -1,0 +1,163 @@
+{
+    "name": "com.gpbeta.media",
+    "version": "1.3.3",
+    
+    "title": {
+        "en": "Media Support Extension",
+        "zh": "多媒体支持扩展",
+        "zh_TW": "多媒體支持擴展",
+        "ja": "マルチメディア拡張機能"
+    },
+
+    "description": {
+        "en": "Provides image and video widgets, data source and actions for system media player, CAD compatible player, QQ Music, NetEase Music, etc.",
+        "zh": "提供图片和视频挂件，以及对系统多媒体控制、CAD 兼容播放器、QQ 音乐和网易云音乐等数据源和动作支持。",
+        "zh_TW": "提供圖片和視頻掛件，以及對系統多媒體控製、CAD 兼容播放器、QQ 音樂和網易雲音樂等數據源和動作支持。",
+        "ja": "画像とビデオのウィジェット、及びシステムメディアプレーヤー、CAD コンパチプレーヤー、QQ Music、NetEase Music などのデータソースとアクションを提供します。"
+    },
+
+    "homepage": "http://sao.gpbeta.com",
+    "bugs": { "email": "studiocghibli@gmail.com", "url": "https://nvg.dev/core/sao-utils/issues" },
+    "author": { "name": "Joshua GPBeta", "email": "studiocghibli@gmail.com", "url": "http://www.gpbeta.com" },
+    "contributors": [
+        { "name": "RangerCD", "email": "compact-disk@live.com", "url": "http://www.rangercd.com" }
+    ],
+
+    "engines": {
+        "qt.quick": ">=2.12",
+        "nvg.api": "~1"
+    },
+
+    "resources": [
+        {
+            "location": "/widget/image",
+            "catalog": "widget",
+            "title": {
+                "en": "Image Widget",
+                "zh": "桌面图片挂件",
+                "zh_TW": "桌面圖片掛件",
+                "ja": "イメージウィジェット"
+            },
+            "preview": "Images/image-widget.png",
+            "entry": "qml/ImageWidget.qml"
+        },
+        {
+            "location": "/widget/gallery",
+            "catalog": "widget",
+            "title": {
+                "en": "Gallery Widget",
+                "zh": "幻灯片画廊挂件",
+                "zh_TW": "幻燈片畫廊掛件",
+                "ja": "ギャラリーウィジェット"
+            },
+            "preview": "Images/gallery-widget.png",
+            "entry": "qml/GalleryWidget.qml"
+        },
+        {
+            "location": "/widget/video",
+            "catalog": "widget",
+            "title": {
+                "en": "Video Widget",
+                "zh": "桌面视频挂件",
+                "zh_TW": "桌面視頻掛件",
+                "ja": "ビデオウィジェット"
+            },
+            "preview": "Images/video-widget.png",
+            "entry": "qml/VideoWidget.qml"
+        }, {
+            "location": "/data/player",
+            "catalog": "data",
+            "title": {
+                "en": "Media Player Data",
+                "zh": "媒体播放器数据",
+                "zh_TW": "媒體播放器數據",
+                "ja": "メディアプレイヤーデータ"
+            },
+            "entry": {
+                "system": "qml/data/SystemMediaData.qml",
+                "cad": "qml/data/CADMusicData.qml",
+                "qq": "qml/data/QQMusicData.qml",
+                "kugou": "qml/data/KuGouMusicData.qml",
+                "netease": "qml/data/NetEaseMusicData.qml"
+            }
+        }, {
+            "location": "/action/player",
+            "catalog": "action",
+            "title": {
+                "en": "Media Player Action",
+                "zh": "媒体播放器动作",
+                "zh_TW": "媒體播放器動作",
+                "ja": "メディアプレイヤーの操作"
+            },
+            "entry": {
+                "system": "qml/action/SystemMediaAction.qml",
+                "cad": "qml/action/CADMusicAction.qml"
+            }
+        }, {
+            "location": "/image/frame",
+            "catalog": "background",
+            "title": {
+                "en": "Image Frames",
+                "zh": "图片边框背景",
+                "zh_TW": "圖片邊框背景",
+                "ja": "画像フレーム"
+            },
+            "entry": "Images/frame"
+        }, {
+            "location": "/preset/widget-cad",
+            "catalog": "preset/widget",
+            "title": {
+                "en": "CAD Music Player",
+                "zh": "CAD 音乐播放器",
+                "zh_TW": "CAD 音樂播放器",
+                "ja": "CAD メディアプレイヤー"
+            },
+           "preview": "Presets/widget-cad.png",
+           "entry": "Presets/widget-cad.json"
+        }, {
+            "location": "/preset/widget-cad-mini",
+            "catalog": "preset/widget",
+            "title": {
+                "en": "CAD Mini Player",
+                "zh": "CAD 迷你播放器",
+                "zh_TW": "CAD 迷你播放器",
+                "ja": "CAD ミニプレイヤー"
+            },
+           "preview": "Presets/widget-cad-mini.png",
+           "entry": "Presets/widget-cad-mini.json"
+        }, {
+            "location": "/preset/widget-smtc-dark",
+            "catalog": "preset/widget",
+            "title": {
+                "en": "SMTC Music Player (Dark)",
+                "zh": "SMTC 音乐播放器（黑）",
+                "zh_TW": "SMTC 音樂播放器（黑）",
+                "ja": "SMTC メディアプレイヤー（黒）"
+            },
+           "preview": "Presets/widget-smtc-dark.png",
+           "entry": "Presets/widget-smtc-dark.json"
+        }, {
+            "location": "/preset/widget-smtc-light",
+            "catalog": "preset/widget",
+            "title": {
+                "en": "SMTC Music Player (Light)",
+                "zh": "SMTC 音乐播放器（白）",
+                "zh_TW": "SMTC 迷你播放器（白）",
+                "ja": "SMTC メディアプレイヤー（白）"
+            },
+           "preview": "Presets/widget-smtc-light.png",
+           "entry": "Presets/widget-smtc-light.json"
+        }, {
+            "location": "/preset/widget-gallery",
+            "catalog": "preset/widget",
+            "title": {
+                "en": "Slideshow Gallery",
+                "zh": "幻灯片画廊",
+                "zh_TW": "幻燈片畫廊",
+                "ja": "スライドショーギャラリー"
+            },
+           "preview": "Presets/widget-gallery.png",
+           "entry": "Presets/widget-gallery.json"
+        }
+    ]
+}

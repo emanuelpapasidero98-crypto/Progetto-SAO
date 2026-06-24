@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+    <list name="tiles">
+        <map>
+            <list name="items">
+                <map>
+                    <value name="label">"Artist"</value>
+                    <value name="content">"data-text"</value>
+                    <value name="width">2</value>
+                    <value name="height">0.5</value>
+                    <value name="data">{"mode":0,"unit":"","interval":1000,"process":[{"source":"nvg://system/process#marquee","parameter":{"direction":0,"limit":5}}],"source":"nvg://media.gpbeta.com/data/player#cad","value":"artist"}</value>
+                </map>
+                <map>
+                    <value name="label">"Album"</value>
+                    <value name="content">"data-text"</value>
+                    <value name="width">6</value>
+                    <value name="height">0.5</value>
+                    <value name="data">{"mode":0,"unit":"","interval":1000,"process":[{"source":"nvg://system/process#marquee","parameter":{"direction":0,"limit":16}}],"source":"nvg://media.gpbeta.com/data/player#cad","value":"album"}</value>
+                    <value name="color">"#e91e63"</value>
+                </map>
+            </list>
+        </map>
+        <map>
+            <list name="items">
+                <map>
+                    <value name="label">"Cover"</value>
+                    <value name="content">"data-image"</value>
+                    <value name="width">8</value>
+                    <value name="height">8</value>
+                    <value name="data">{"mode":0,"unit":"","interval":1000,"source":"nvg://media.gpbeta.com/data/player#cad","value":"cover"}</value>
+                </map>
+            </list>
+        </map>
+        <map>
+            <list name="items">
+                <map>
+                    <value name="label">"Title"</value>
+                    <value name="content">"data-text"</value>
+                    <value name="width">8</value>
+                    <value name="height">1</value>
+                    <value name="data">{"mode":0,"unit":"","interval":1000,"source":"nvg://media.gpbeta.com/data/player#cad","value":"title"}</value>
+                </map>
+            </list>
+        </map>
+        <map>
+            <list name="items">
+                <map>
+                    <value name="label">"Progress"</value>
+                    <value name="content">"data-bar"</value>
+                    <value name="width">5</value>
+                    <value name="height">0.5</value>
+                    <value name="data">{"mode":0,"unit":"","interval":1000,"source":"nvg://media.gpbeta.com/data/player#cad","value":"progress"}</value>
+                </map>
+                <map>
+                    <value name="label">"&lt;"</value>
+                    <value name="content">"data-text"</value>
+                    <value name="action">{"data":{"command":"prev"},"source":"nvg://media.gpbeta.com/action/player#cad"}</value>
+                    <value name="width">0.5</value>
+                    <value name="height">0.5</value>
+                </map>
+                <map>
+                    <value name="label">"Time"</value>
+                    <value name="content">"data-text"</value>
+                    <value name="action">{"data":{"command":"pause"},"source":"nvg://media.gpbeta.com/action/player#cad"}</value>
+                    <value name="width">2</value>
+                    <value name="height">0.5</value>
+                    <value name="data">{"mode":0,"unit":"","interval":1000,"update":"%time% / %length%","source":"nvg://media.gpbeta.com/data/player#cad","value":"custom"}</value>
+                </map>
+                <map>
+                    <value name="label">"&gt;"</value>
+                    <value name="content">"data-text"</value>
+                    <value name="action">{"data":{"command":"next"},"source":"nvg://media.gpbeta.com/action/player#cad"}</value>
+                    <value name="width">0.5</value>
+                    <value name="height">0.5</value>
+                </map>
+            </list>
+        </map>
+    </list>
+</map>

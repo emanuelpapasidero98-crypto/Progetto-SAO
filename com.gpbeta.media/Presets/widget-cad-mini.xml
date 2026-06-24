@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+    <list name="items">
+        <map>
+            <list name="elements">
+                <map>
+                    <value name="content">"image"</value>
+                    <value name="alignment">1</value>
+                    <value name="left">4</value>
+                    <value name="z">2</value>
+                    <value name="width">96</value>
+                    <value name="height">96</value>
+                    <map name="view">
+                        <value name="mode">true</value>
+                        <value name="radius">150</value>
+                        <value name="fill">2</value>
+                        <value name="data">{"mode":0,"unit":"","interval":1000,"source":"nvg://media.gpbeta.com/data/player#cad","value":"cover"}</value>
+                        <value name="spin">true</value>
+                        <value name="spinRPM">2</value>
+                    </map>
+                </map>
+                <map>
+                    <value name="content">"circle-graph"</value>
+                    <value name="alignment">1</value>
+                    <value name="left">0</value>
+                    <map name="view">
+                        <value name="radius">52</value>
+                        <value name="strokeSize">4</value>
+                        <value name="offset">180</value>
+                        <value name="strokeColor">"#ddffffff"</value>
+                        <value name="hole">0.2</value>
+                        <value name="fillColor">"#aa000000"</value>
+                    </map>
+                </map>
+                <map>
+                    <value name="content">"circle-graph"</value>
+                    <value name="alignment">1</value>
+                    <value name="left">0</value>
+                    <value name="z">1</value>
+                    <map name="view">
+                        <value name="mode">true</value>
+                        <value name="radius">52</value>
+                        <value name="strokeSize">4</value>
+                        <value name="offset">180</value>
+                        <value name="angle">360</value>
+                        <value name="strokeColor">"#e91e63"</value>
+                        <value name="hole">1</value>
+                        <value name="fillColor">"#00000000"</value>
+                        <value name="data">{"mode":0,"unit":"","interval":1000,"source":"nvg://media.gpbeta.com/data/player#cad","value":"progress"}</value>
+                    </map>
+                </map>
+                <map>
+                    <value name="content">"circle-graph"</value>
+                    <value name="alignment">1</value>
+                    <value name="left">36</value>
+                    <value name="horizon">-105</value>
+                    <value name="z">1</value>
+                    <map name="view">
+                        <value name="strokeColor">"#66000000"</value>
+                        <value name="fillColor">"#66999999"</value>
+                    </map>
+                </map>
+            </list>
+            <value name="background">{"normal":"nvg://hud.widget.gpbeta.com/background#Round-W90-S25-96.9.png"}</value>
+            <value name="width">320</value>
+            <value name="height">104</value>
+            <value name="color">"#00000000"</value>
+            <value name="label">"Background"</value>
+        </map>
+        <map>
+            <value name="label">"Caption"</value>
+            <list name="elements">
+                <map>
+                    <value name="content">"text"</value>
+                    <value name="alignment">35</value>
+                    <value name="top">-10</value>
+                    <value name="vertical">-14</value>
+                    <value name="height">46</value>
+                    <map name="view">
+                        <value name="mode">true</value>
+                        <value name="font">{"family":"Source Han Sans SC","pixelSize":20,"weight":63}</value>
+                        <value name="style">1</value>
+                        <value name="hAlign">2</value>
+                        <value name="data">{"mode":0,"unit":"","interval":1000,"process":[],"source":"nvg://media.gpbeta.com/data/player#cad","value":"title"}</value>
+                        <value name="lineHeight">70</value>
+                        <value name="vAlign">2</value>
+                        <value name="sizeMode">1</value>
+                        <value name="minimumSize">15</value>
+                    </map>
+                </map>
+                <map>
+                    <value name="content">"text"</value>
+                    <value name="alignment">67</value>
+                    <value name="left">0</value>
+                    <value name="right">0</value>
+                    <value name="vertical">16</value>
+                    <value name="height">20</value>
+                    <map name="view">
+                        <value name="mode">true</value>
+                        <value name="font">{"family":"Source Han Sans SC","pixelSize":14,"weight":50}</value>
+                        <value name="color">"#5e5e5e"</value>
+                        <value name="hAlign">2</value>
+                        <value name="data">{"mode":0,"unit":"","interval":1000,"source":"nvg://media.gpbeta.com/data/player#cad","value":"artist"}</value>
+                    </map>
+                </map>
+            </list>
+            <value name="background">{"normal":"nvg://hud.widget.gpbeta.com/background#Transparent.9.png"}</value>
+            <value name="horizon">36</value>
+            <value name="width">180</value>
+            <value name="height">54</value>
+            <value name="visibility">"normal"</value>
+            <value name="data">{"mode":0,"unit":"%","interval":1000,"update":0,"source":"nvg://system/data#cpu","value":"load"}</value>
+        </map>
+        <map>
+            <value name="label">"Play"</value>
+            <list name="elements">
+                <map>
+                    <value name="content">"text"</value>
+                    <map name="view">
+                        <value name="mode">true</value>
+                        <value name="font">{"family":"Font Awesome 5 Pro","pixelSize":32,"weight":25}</value>
+                        <value name="style">1</value>
+                        <value name="styleColor">"#11ffffff"</value>
+                    </map>
+                </map>
+            </list>
+            <value name="action">{"data":{"command":"pause"},"source":"nvg://media.gpbeta.com/action/player#cad"}</value>
+            <value name="visibility">"hovered"</value>
+            <value name="data">{"mode":0,"unit":"","interval":1000,"process":[{"source":"nvg://system/process#script","parameter":{"init":"","execute":"context.output = context.output === 1 ? '' : '';"}}],"source":"nvg://media.gpbeta.com/data/player#cad","value":"state"}</value>
+            <value name="horizon">40</value>
+            <value name="width">50</value>
+            <value name="height">50</value>
+        </map>
+        <map>
+            <value name="label">"Prev"</value>
+            <list name="elements">
+                <map>
+                    <value name="content">"text"</value>
+                    <map name="view">
+                        <value name="mode">false</value>
+                        <value name="font">{"family":"Font Awesome 5 Pro","pixelSize":20,"weight":50}</value>
+                        <value name="style">1</value>
+                        <value name="styleColor">"#11ffffff"</value>
+                        <value name="text">""</value>
+                    </map>
+                </map>
+            </list>
+            <value name="action">{"data":{"command":"prev"},"source":"nvg://media.gpbeta.com/action/player#cad"}</value>
+            <value name="visibility">"hovered"</value>
+            <value name="horizon">-20</value>
+            <value name="width">50</value>
+            <value name="height">50</value>
+        </map>
+        <map>
+            <value name="label">"Next"</value>
+            <list name="elements">
+                <map>
+                    <value name="content">"text"</value>
+                    <map name="view">
+                        <value name="mode">false</value>
+                        <value name="font">{"family":"Font Awesome 5 Pro","pixelSize":20,"weight":50}</value>
+                        <value name="style">1</value>
+                        <value name="styleColor">"#11ffffff"</value>
+                        <value name="text">""</value>
+                    </map>
+                </map>
+            </list>
+            <value name="action">{"data":{"command":"next"},"source":"nvg://media.gpbeta.com/action/player#cad"}</value>
+            <value name="visibility">"hovered"</value>
+            <value name="horizon">100</value>
+            <value name="width">50</value>
+            <value name="height">50</value>
+        </map>
+    </list>
+    <value name="font">{"family":"Source Han Sans SC","pixelSize":20,"weight":50}</value>
+    <value name="background">{"normal":"nvg://hud.widget.gpbeta.com/background#Transparent.9.png","hovered":"nvg://hud.widget.gpbeta.com/background#Transparent-hovered.9.png","pressed":"nvg://hud.widget.gpbeta.com/background#Transparent-pressed.9.png"}</value>
+    <value name="foreground">"#cc000000"</value>
+    <value name="base">"#666666"</value>
+</map>
