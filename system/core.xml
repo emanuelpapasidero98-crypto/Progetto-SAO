@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+    <map name="app">
+        <value name="first_run">false</value>
+        <value name="no_exit_trick">1</value>
+        <value name="tutorial_update">1</value>
+        <value name="latest_update">"1.7.0"</value>
+    </map>
+    <map name="dev"/>
+    <map name="ui"/>
+    <map name="audio"/>
+    <map name="input">
+        <value name="touch_gesture_on">true</value>
+    </map>
+    <map name="launcher">
+        <value name="background_closing_on">true</value>
+        <value name="camera_zoom">0.31872509960159356</value>
+        <value name="menu_position">0</value>
+        <value name="style_source">"nvg://sao.theme.gpbeta.com/launcher"</value>
+    </map>
+</map>

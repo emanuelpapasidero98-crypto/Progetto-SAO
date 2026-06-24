@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+    <map name="root"/>
+    <map name="user">
+        <value name="icon">{"normal":"nvg://botw.zelda.theme.gpbeta.com/icon/catalog#Weapon.png"}</value>
+    </map>
+    <map name="party">
+        <value name="icon">{"normal":"nvg://botw.zelda.theme.gpbeta.com/icon/catalog#Bow.png"}</value>
+    </map>
+    <map name="message">
+        <value name="icon">{"normal":"nvg://botw.zelda.theme.gpbeta.com/icon/catalog#Shield.png"}</value>
+    </map>
+    <map name="navigation">
+        <value name="icon">{"normal":"nvg://botw.zelda.theme.gpbeta.com/icon/catalog#Armor.png"}</value>
+    </map>
+    <map name="settings">
+        <value name="icon">{"normal":"nvg://botw.zelda.theme.gpbeta.com/icon/catalog#Item.png"}</value>
+    </map>
+    <map name="settings.option">
+        <value name="icon">{"normal":"nvg://botw.zelda.theme.gpbeta.com/icon/item#Obj_DRStone_Get.png"}</value>
+    </map>
+    <map name="settings.help">
+        <value name="icon">{"normal":"nvg://botw.zelda.theme.gpbeta.com/icon/item#Obj_AmiiboItem.png"}</value>
+    </map>
+    <map name="settings.exit">
+        <value name="icon">{"normal":"nvg://botw.zelda.theme.gpbeta.com/icon/item#KeySmall.png"}</value>
+    </map>
+</map>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+    <map name="ready">
+        <list name="actions"/>
+    </map>
+    <map name="dnd_exit">
+        <list name="actions"/>
+    </map>
+    <map name="dnd_enter">
+        <list name="actions"/>
+    </map>
+</map>

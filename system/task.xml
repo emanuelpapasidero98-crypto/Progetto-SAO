@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+    <map name="delayed">
+        <list name="schedules"/>
+    </map>
+    <map name="periodic">
+        <list name="schedules"/>
+    </map>
+</map>
