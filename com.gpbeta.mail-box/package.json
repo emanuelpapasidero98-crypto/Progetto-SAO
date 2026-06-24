@@ -1,0 +1,64 @@
+{
+    "name": "com.gpbeta.mail-box",
+    "version": "1.0.5",
+    
+    "title": {
+        "en": "Mail Box Extension",
+        "zh": "Mail Box 邮箱扩展",
+        "zh_TW": "Mail Box 郵箱擴展",
+        "ja": "メールボックス機能"
+    },
+
+    "description": {
+        "en": "An IMAP/SMTP mail client, provides basic mailing functions，contact list and SAO/GGO style message panels.",
+        "zh": "IMAP/SMTP 邮箱客户端，提供基本邮件收发和管理功能，可切换 SAO/GGO 风格的消息面板。",
+        "zh_TW": "IMAP/SMTP 郵箱客戶端，提供基本郵件收發和管理功能，可切換 SAO/GGO 風格的消息面板。",
+        "ja": "IMAP/SMTP メールクライアントとして、基本的なメール機能、連絡先リスト、SAO/GGOスタイルのメッセージパネルを提供します。"
+    },
+
+    "homepage": "http://sao.gpbeta.com",
+    "bugs": { "email": "studiocghibli@gmail.com", "url": "https://nvg.dev/core/sao-utils/issues" },
+    "author": { "name": "Joshua GPBeta", "email": "studiocghibli@gmail.com", "url": "http://www.gpbeta.com" },
+
+    "engines": {
+        "qt.quick": ">=2.12",
+        "nvg.api": "~1"
+    },
+
+    "main": "module.qml",
+
+    "resources": [
+        {
+            "location": "/action",
+            "catalog": "action",
+            "title": {
+                "en": "Mail Box Action",
+                "zh": "Mail Box 动作",
+                "zh_TW": "Mail Box 動作",
+                "ja": "メールボックスの操作"
+            },
+            "entry": "qml/MailAction.qml"
+        }, {
+            "location": "/data",
+            "catalog": "data",
+            "title": {
+                "en": "Mail Box Data Collection",
+                "zh": "Mail Box 数据合集",
+                "zh_TW": "Mail Box 數據合集",
+                "ja": "メールボックスデータコレクション"
+            },
+            "entry": "qml/MailData.qml"
+        }, {
+            "location": "/preset/widget-unread",
+            "catalog": "preset/widget",
+            "title": {
+                "en": "Unread Messages",
+                "zh": "未读邮件",
+                "zh_TW": "未讀郵件",
+                "ja": "未読メール"
+            },
+           "preview": "Presets/widget-unread.png",
+           "entry": "Presets/widget-unread.json"
+        }
+    ]
+}

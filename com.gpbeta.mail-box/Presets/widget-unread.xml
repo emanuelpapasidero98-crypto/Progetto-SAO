@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+    <list name="items">
+        <map>
+            <list name="elements">
+                <map>
+                    <value name="content">"icon"</value>
+                    <map name="effect"/>
+                    <map name="view">
+                        <value name="icon">{"normal":"nvg://sao.theme.gpbeta.com/icon/main#Communicate/mail1-hovered.png"}</value>
+                    </map>
+                    <value name="vertical">-6</value>
+                </map>
+                <map>
+                    <value name="content">"text"</value>
+                    <map name="effect"/>
+                    <value name="vertical">15</value>
+                    <map name="view">
+                        <value name="mode">true</value>
+                        <value name="hAlign">2</value>
+                        <value name="style">1</value>
+                    </map>
+                </map>
+                <map>
+                    <value name="content">"shape"</value>
+                    <map name="effect"/>
+                    <value name="alignment">99</value>
+                    <value name="top">3</value>
+                    <value name="bottom">3</value>
+                    <value name="left">3</value>
+                    <value name="right">3</value>
+                    <value name="z">-1</value>
+                    <map name="view">
+                        <value name="fillData">{"mode":0,"unit":"","interval":1000,"process":[{"source":"nvg://system/process#script","parameter":{"init":"","execute":"context.output = context.output ? \"#CCFFC107\" : \"transparent\""}}],"source":"nvg://mail-box.gpbeta.com/data","value":"unread"}</value>
+                    </map>
+                </map>
+            </list>
+            <value name="width">58</value>
+            <value name="height">58</value>
+            <value name="background">{"normal":"nvg://hud.widget.gpbeta.com/background#GGO-Status.9.png","hovered":"nvg://hud.widget.gpbeta.com/background#GGO-Status-hovered.9.png","pressed":"nvg://hud.widget.gpbeta.com/background#GGO-Status-pressed.9.png"}</value>
+            <value name="action">{"data":{"actions":[{"data":{"command":1,"recipient":""},"source":"nvg://mail-box.gpbeta.com/action"},{"data":{"command":4,"recipient":""},"source":"nvg://mail-box.gpbeta.com/action"}],"values":[{"mode":0,"unit":"","interval":1000,"source":"nvg://mail-box.gpbeta.com/data","value":"unread"}],"init":"","execute":"if (values[0].output())\n    resolve(actions[1].execute());\nelse\n    resolve(actions[0].execute());"},"source":"nvg://system/action#script"}</value>
+            <value name="data">{"mode":0,"unit":"","interval":1000,"source":"nvg://mail-box.gpbeta.com/data","value":"unread"}</value>
+        </map>
+    </list>
+    <value name="font">{"family":"Source Han Sans SC","pixelSize":14,"weight":50}</value>
+</map>
